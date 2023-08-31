@@ -1,0 +1,31 @@
+.quotebody{
+    background: -moz-linear-gradient(0deg, #ee390f 0%, #f9b700 100%);
+    background: -webkit-linear-gradient(0deg, #ee390f 0%, #f9b700 100%);
+    background: -ms-linear-gradient(0deg, #ee390f 0%, #f9b700 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.quote{
+    text-align:center;
+}
+h1{
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Impact;
+}
+p,#quoteDisplay,#quoteAuthor{
+    font-size: 35px;
+}
+#quoteDisplay,#quoteAuthor{
+    margin-bottom: 2rem;
+}
+button{
+    width: 250px;
+    height: 80px;
+    background: linear-gradient(0deg, #ee390f 0%, #f9b700 100%);
+    color: white;
+    border: 2px solid #000;
+    margin-bottom: 2rem;
+}
