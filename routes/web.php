@@ -45,6 +45,13 @@ Route::controller(CourseController::class)->group(function(){
 
 });
 
+/* Route::controller(CourseController::class)->name('front.')->group(function(){
+  Route::get("category/{id}","category")->name("category");//courses with category
+  Route::get("courses","courses")->name("courses");
+  Route::get("allcourses","allcourses")->name("allcourses");//all courses
+  Route::get("category/{id}/courses/{c_id}","show")->name("courseDetails");//course details
+}); */
+
 Route::controller(ContactController::class)->group(function(){
   Route::get("contact","index")->name("front.contact");
 });
@@ -96,6 +103,8 @@ Route::controller(TrainerController::class)->group(function(){
   Route::get("/trainers/edit/{id}","edit")->name("admin.trainer.edit");
   Route::post("/trainers/update","update")->name("admin.trainer.update");
   Route::get("/trainers/delete/{id}","delete")->name("admin.trainer.delete");
+
+  Route::resources("/trainers");
 
 });
 
